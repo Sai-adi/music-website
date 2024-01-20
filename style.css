@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    background-color: #0a0a0a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgb(1, 1, 1, 0.05);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: .0.2s ease-in-out;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: .0.2s ease-in-out;
+}
+.hero-section{
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+.music-section{
+    padding-top: 50px;
+    background: #080808;
+    color: white;
+}
+.res{
+    display: none;
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.android-iphone-img{
+    margin-top: -400px;
+    position: relative;
+    top: 500px;
+}
+.primary-btn{
+    background-color: rgba(115, 115, 115, 0.682);
+    color: white;
+}
+.secondary-btn{
+    background-color: rgb(106, 106, 105);
+    color: white;
+}
+.about-container{
+    padding-top: 500px;
+    display: grid;
+    place-content: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.video-section{
+    background-color: rgb(5, 5, 5);
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.gift-section{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-upper{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.footer-upper .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 400px;
+}
+.footer-upper h4{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer-lower{
+    background-color: rgb(76, 74, 74);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+}
+.footer-links ul li:hover{
+    border-bottom: 1px solid white;
+    transition: .0.2s ease-in-out;
+    transition: .0.2s ease-in-out;
+}
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 400px;
+    padding-left: 20vh;
+}
+
+@media (max-width:480px) {
+    header{
+        width: 95rem;
+        display: flex;
+        padding: 11vh;
+    }
+    .logo .h4{
+        position:relative;
+        font-size: 9rem;
+        display: flex;
+    }
+    .container ul{
+        display: none;
+    }
+    header i {
+        display: block;
+    }
+    .res {
+        display: block;
+        height: 10vh;
+        width: 10vh;
+    }
+    .total{
+        display: flex;
+        gap: 60vh;
+    }
+    .ri-menu-3-fill{
+        font-size: 9rem;
+    }
+    .hero-section img{
+        height: 100%;
+    }
+    .spotify-img{
+    }
+    .music-section{
+        width: 95.4rem;
+        padding-top: 90vh;
+    }
+    .container h2{
+        font-size: 9rem;
+    }
+    .container h4{
+        font-size: 5rem;
+        text-align: center;
+        font-weight: 300;
+    }
+    .primary-btn{
+        font-size: 10vh;
+        padding: 5vh 10vh;
+        margin-top: 10vh;
+    }
+    .para{
+        display: none;
+    }
+    .about-container{
+        font-size: 70px;
+        position: relative;
+        margin-left: 11em;
+    }
+    .secondary-btn{
+        font-size: 10vh;
+        padding: 5vh 60px;
+        margin-top: 10vh;
+    }
+    .video-section {
+        width: 95.5rem;
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+    }
+    .video-section h3{
+        font-size: 10rem;
+        margin: 0px 15vh;
+    }
+    .gift-section{
+        width: 95.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 8rem;
+        font-size: 10vh;
+        padding-bottom: 10rem;
+    }
+    .gift-card img{
+        width: 120%;
+        height: 100%;
+    }
+    .footer-upper{
+        width: 95.5rem;
+        font-size: 7rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        gap: 15vh;
+    }
+    .footer-lower{
+        width: 95.5rem;
+        font-size: 10vh;
+    }
+}
